@@ -21,7 +21,7 @@ This quickstart will help you setup/configure Ansible and the included NetApp mo
 
 
 # Configuration
-1   Install Ansible  
+**1   Install Ansible**  
 Please follow your specific OS instructions form the official Ansible documentation here:
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 
@@ -37,7 +37,7 @@ yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rp
 yum install ansible  
 yum install git  
 
-2  NetApp cluster settings  
+**2  NetApp cluster settings**  
 Create a user and set the password for the ansible account:  
 Cluster::>security login create -user-or-group-name ansible -application ontapi -authentication-method password -role admin  
 
@@ -46,17 +46,17 @@ Enable the API endpoint on the cluster in advanced mode:
 Cluster::> set adv  
 Cluster::> system services web modify -http-enabled true  
 
-3   Download examples  
+**3   Download examples**  
 On your host, find a suitable location and run the following command;  
 git clone  https://github.com/infragilis/ansible-ontap-quickstart  
 
-4   Set your variables  
+**4   Set your variables**  
 Open the vars.myml file and adjust to your environment, most variables will work without changing, the minimal changes are;  
 netapp_hostname: "clusterIP or name"  
 netapp_username: "ansible"  
 netapp_password: "xxx"  
 
-5   Test connectivity  
+**5   Test connectivity**  
 Inside the example playbooks  there is a playbook called ‘facts.yml’   
 run the following command to test your connectivity:  
 ansible-playbook facts.yml  
@@ -66,7 +66,7 @@ troubleshooting, if more detailed troubleshooting is required
 run the playbook with debug enabled.  
 ansible-playbook facts.yml -vvv  
 
-7   Example playbooks  
+**7   Example playbooks**  
 
 <coming soon>
 
