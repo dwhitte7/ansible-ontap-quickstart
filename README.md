@@ -57,10 +57,14 @@ netapp_username: "ansible"
 netapp_password: "xxx"  
 
 5   Test connectivity
-Inside the example playbooks  there is a playbook called ‘facts.yml’ run the following command to test your connectivity.
-ansible-playbook facts.yml
-This should result in a large amount of data being returned from the cluster, or if anything is setup incorrect there will be clear errors to assist in troubleshooting, if more detailed troubleshooting is required run the playbook with debug enabled.
-ansible-playbook facts.yml -vvv
+Inside the example playbooks  there is a playbook called ‘facts.yml’   
+run the following command to test your connectivity:  
+ansible-playbook facts.yml  
+This should result in a large amount of data being returned from the cluster, or  
+if anything is setup incorrect there will be clear errors to assist in  
+troubleshooting, if more detailed troubleshooting is required  
+run the playbook with debug enabled.  
+ansible-playbook facts.yml -vvv  
 
 7   Example playbooks
 
