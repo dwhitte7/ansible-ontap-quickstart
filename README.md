@@ -38,23 +38,23 @@ yum install ansible
 yum install git  
 
 2  NetApp cluster settings
-Create a user and set the password for the ansible account:
-Cluster::>security login create -user-or-group-name ansible -application ontapi -authentication-method password -role admin
+Create a user and set the password for the ansible account:  
+Cluster::>security login create -user-or-group-name ansible -application ontapi -authentication-method password -role admin  
 
 Enable the API endpoint on the cluster in advanced mode:
 
-Cluster::> set adv
-Cluster::> system services web modify -http-enabled true
+Cluster::> set adv  
+Cluster::> system services web modify -http-enabled true  
 
 3   Download examples
-On your host, find a suitable location and run the following command;
-git clone  https://github.com/infragilis/ansible-ontap-quickstart
+On your host, find a suitable location and run the following command;  
+git clone  https://github.com/infragilis/ansible-ontap-quickstart  
 
 4   Set your variables
-Open the vars.myml file and adjust to your environment, most variables will work without changing, the minimal changes are;
-netapp_hostname: "clusterIP or name"
-netapp_username: "ansible"
-netapp_password: "xxx"
+Open the vars.myml file and adjust to your environment, most variables will work without changing, the minimal changes are;  
+netapp_hostname: "clusterIP or name"  
+netapp_username: "ansible"  
+netapp_password: "xxx"  
 
 5   Test connectivity
 Inside the example playbooks  there is a playbook called ‘facts.yml’ run the following command to test your connectivity.
