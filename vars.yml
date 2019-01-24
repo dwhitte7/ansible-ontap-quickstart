@@ -1,0 +1,33 @@
+############################################
+# boonstra@netapp.com / 2019
+#############################################
+netapp_hostname: "172.30.3.100"
+netapp_hostname_dest: "172.25.3.43"
+netapp_username: "ansible"
+netapp_password: "xxx"
+vserver: ansible_svm_name
+vserver_dest: ansible_svm_remote_name
+# address is the to_be_created SVM ip
+address_nfs: 172.30.3.25
+address_iscsi: 172.30.3.26
+address_cifs: 172.30.3.27
+aggrname: data_aggr
+state: present
+volname: test_vol_name
+dest_vol: test_vol_name_dest
+igroup_name: iscsi-test_name
+lun_name: iscsi_test_name
+qtree_name: qt_name
+share_name: sh_name
+group_name: Administrators
+permission: full_control
+new_size: 40
+#cifs_domain variables
+cifs_user: Administrator
+cifs_pass: xxx
+cifs_server_name: server_name
+cifs_domain: ad.local
+domain: ad.local
+#comma separate multiple dns
+dns: "172.30.3.5"
+ntp_server: "pool.ntp.org"
