@@ -75,7 +75,20 @@ ansible-playbook facts.yml -vvv
 
 **7   Example playbooks**  
 
-<coming soon>
+1.1	CreateSVM.yml  
+Creates a NFS/ISCSI/CIFS enabled SVM, attaches to AD, and sets NTP and DNS.  
+1.2	CreateCIFS.yml  
+Creates a Qtree, Share and sets CIFS acl’s  
+1.3	CreateLun.yml  
+Creates a lun, igroup and maps the lun.  
+1.4	CreatePeer.yml  
+Creates a peering relation between two SVMs.  
+1.5	CreateSnapmirror.yml  
+Creates a snapmirror relation between two volumes.  
+1.6	resizeVolume.yml  
+Creates/resizes a volume.   
+1.7	facts.yml  
+Pulls a massive amount of information from the cluster for further use in playbooks.  
 
 
 
