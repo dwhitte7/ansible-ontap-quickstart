@@ -82,4 +82,4 @@ ansible-playbook facts.yml -vvv
 
 
 # Support
-Please enter an issue <<link required>> if you would like to report a defect
+Please enter an issue https://github.com/infragilis/ansible-ontap-quickstart/issues if you would like to report a defect
