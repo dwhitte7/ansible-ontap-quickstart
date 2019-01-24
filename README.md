@@ -6,15 +6,15 @@ This quickstart is created to expand the various examples that are listed on ans
 This Ansible quickstart and sample playbooks are written as best effort and provide no warranties or SLAs, expressed or implied.
 
 # Repository includes:
-├── createCIFS.yml
-├── createLun.yml
-├── createPeer.yml
-├── createSnapmirror.yml
-├── createSVM.yml
-├── facts.yaml
-├── README.md
-├── resizeVolume.yml
-└── vars.yml
+├── createCIFS.yml  
+├── createLun.yml  
+├── createPeer.yml  
+├── createSnapmirror.yml  
+├── createSVM.yml  
+├── facts.yaml  
+├── README.md  
+├── resizeVolume.yml  
+└── vars.yml  
 
  
 # Supported configurations:
