@@ -16,7 +16,7 @@ This Ansible quickstart and sample playbooks are written as best effort and prov
 3. Minimum ONTAP version - ONTAP 9.x
 
 # Overview
-These Ansible Modules will help you configure service level based NetApp storage management using NetApp Service Level Manager.
+This quickstart will help you setup/configure Ansible and the included NetApp modules and contains a few working examples to easily expand/adjust in your environment.
 
 
 
