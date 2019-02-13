@@ -45,7 +45,7 @@ yum install ansible
 yum install git  
 
 **1.2  Run a docker container** 
-Please install the desktop version from here: 
+Please install the desktop version from here:  
 https://www.docker.com/products/docker-desktop  
 
 Or follow the instructions to add the container to your existing docker environment: 
