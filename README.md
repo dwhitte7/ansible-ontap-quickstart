@@ -29,7 +29,7 @@ This quickstart will help you setup/configure Ansible and the included NetApp mo
 
 # Configuration
 **1.1   Install Ansible**  
-Please follow your specific OS instructions form the official Ansible documentation here:
+Please follow your specific OS instructions form the official Ansible documentation here: 
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 
 The following commands need to be run on the RedHat 7.5 host to complete the Ansible install, and dependencies on your server OS. The following is an example for RedHat 7.5,
@@ -44,7 +44,7 @@ yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rp
 yum install ansible  
 yum install git  
 
-**1.2  Run a docker container** 
+**1.2  Run a docker container**  
 Please install the desktop version from here:  
 https://www.docker.com/products/docker-desktop  
 
