@@ -27,8 +27,17 @@ This quickstart will help you setup/configure Ansible and the included NetApp mo
 
 
 
-# Configuration
-**1.1   Install Ansible**  
+# Configuration 
+
+**1.1  Run a docker container**  
+Please install the desktop version from here:  
+https://www.docker.com/products/docker-desktop  
+
+Or follow the instructions to add the container to your existing docker environment: 
+
+docker run -it schmots1/netapp-ansible bash
+
+**1.2   Install Ansible**  
 Please follow your specific OS instructions form the official Ansible documentation here: 
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 
@@ -42,15 +51,7 @@ pip install netapp-lib
 yum install rhel-7-server-extras-rpms  
 yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm  
 yum install ansible  
-yum install git  
-
-**1.2  Run a docker container**  
-Please install the desktop version from here:  
-https://www.docker.com/products/docker-desktop  
-
-Or follow the instructions to add the container to your existing docker environment: 
-
-docker run -it schmots1/netapp-ansible bash
+yum install git 
 
 
 **2  NetApp cluster settings**  
