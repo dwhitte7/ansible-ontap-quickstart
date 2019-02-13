@@ -28,7 +28,7 @@ This quickstart will help you setup/configure Ansible and the included NetApp mo
 
 
 # Configuration
-**1   Install Ansible**  
+**1.1   Install Ansible**  
 Please follow your specific OS instructions form the official Ansible documentation here:
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 
@@ -44,6 +44,15 @@ yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rp
 yum install ansible  
 yum install git  
 
+**1.2  Run a docker container** 
+Please install the desktop version from here: 
+https://www.docker.com/products/docker-desktop  
+
+Or follow the instructions to add the container to your existing docker environment: 
+
+docker run -it schmots1/netapp-ansible bash
+
+
 **2  NetApp cluster settings**  
 Create a user and set the password for the ansible account:  
 Cluster::>security login create -user-or-group-name ansible -application ontapi -authentication-method password -role admin  
@@ -54,7 +63,7 @@ Cluster::> set adv
 Cluster::> system services web modify -http-enabled true  
 
 **3   Download examples**  
-On your host, find a suitable location and run the following command;  
+On your host or inside your container, find a suitable location and run the following command;  
 git clone  https://github.com/infragilis/ansible-ontap-quickstart  
 
 **4   Set your variables**  
